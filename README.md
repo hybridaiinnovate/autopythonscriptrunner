@@ -1,157 +1,39 @@
-💤 PyRunner — For Developers Who Refuse to Manually Set Up Environments
+# 💤 PyRunner  
+## Because Activating Virtual Environments Is Emotional Labor
 
-Drag. Drop. Run.
-No venv drama. No dependency rituals. No framework guesswork.
+> "It works on my machine."  
+> — Some villain
 
-PyRunner is a zero-effort Python project launcher built for developers who believe:
+PyRunner is what happens when you are too tired to:
 
-“If I have to activate one more virtual environment, I’m quitting.”
+- create venv
+- activate venv
+- install requirements
+- figure out what framework this repo even uses
+- read the README
+- think
 
-“Why is this repo not running?”
+So you don’t.
 
-“It worked on their machine.”
+You drag.
+It runs.
 
-🚀 What It Does
+---
 
-Just drag a project folder into PyRunner and it will:
+# 🧠 What This Thing Actually Does
 
-🔍 Detect the project root
+You drop a random Python project into it.
 
-🧪 Create a virtual environment automatically
+It:
 
-📦 Install dependencies (requirements.txt, pyproject.toml, setup.cfg)
+- 🧪 Creates a virtual environment
+- 📦 Installs dependencies
+- 🔎 Detects what framework you’re dealing with
+- 🏃 Runs the correct entrypoint
+- 📡 Streams logs
+- 🛑 Lets you panic-stop it
 
-🧠 Detect the framework
-
-▶️ Run the correct entrypoint
-
-📡 Stream logs live
-
-🛑 Let you stop it instantly
-
-You literally don’t have to think.
-
-🧠 Smart Framework Detection
-
-Supports automatic detection for:
-
-⚡ FastAPI / Uvicorn
-
-Detects FastAPI() apps
-
-Runs uvicorn module:app
-
-Supports --reload
-
-🐍 Django
-
-Detects manage.py
-
-Offers:
-
-runserver
-
-check
-
-test
-
-🔥 Flask
-
-Detects Flask() apps
-
-Runs via flask run --app module:app
-
-🧰 CLI Tools
-
-Reads:
-
-pyproject.toml ([project.scripts])
-
-setup.cfg (console_scripts)
-
-Runs CLI entrypoints automatically
-
-📦 Python Packages
-
-Detects __main__.py
-
-Runs via python -m package
-
-📝 General Scripts
-
-Detects main.py, app.py, run.py, server.py
-
-Falls back to root .py files
-
-🎯 Designed For
-
-Developers who hate manual setup
-
-People testing random GitHub repos
-
-Lazy backend engineers
-
-Students
-
-Framework hoppers
-
-“Why doesn’t this run?” moments
-
-💻 How To Use
-pip install PySide6
-python pyrunner.py
-
-
-Then:
-
-Drag a project folder in
-
-Or click “Select Project Folder”
-
-Or run a single .py file
-
-Done.
-
-🛑 What You Don’t Have To Do
-
-❌ Create venv
-
-❌ Activate venv
-
-❌ Install dependencies manually
-
-❌ Figure out entrypoint
-
-❌ Guess the framework
-
-❌ Read README just to run it
-
-🧠 Philosophy
-
-If a Python project exists…
-
-It should run.
-
-No ceremony.
-
-No suffering.
-
-⚠️ Warning
-
-May increase laziness.
-May reduce DevOps knowledge.
-May make you allergic to manual setup.
-
-Use responsibly or dont I really don't care....
-
-If you'd like, I can also write:
-
-A more serious enterprise version
-
-A chaotic meme-heavy version
-
-A README.md full version (with badges)
-
-A Hacker News–bait description
-
-A Product Hunt launch description
+You:
+- 😌 Sit there
+- ☕ Sip something
+- 🧘 Experience inner peace
